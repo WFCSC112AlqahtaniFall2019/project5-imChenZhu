@@ -1,3 +1,7 @@
+/* Katherine Zhu
+ * CS112
+ * Project 5
+ * **/
 #include <iostream>
 #include <string>
 #include <cctype>
@@ -6,6 +10,11 @@
 using namespace std;
 
 int main() {
+    Deck newgame;
+    Deck discard;
+    newgame.PopuDeck();
+    newgame.Shuffle();
+
     cout << "Welcome to Blind Man's Bluff" << endl << endl;
     bool play, invalid, guessedHigher;
     string response;

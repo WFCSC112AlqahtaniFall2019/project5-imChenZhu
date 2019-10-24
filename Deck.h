@@ -4,7 +4,14 @@
 #include "Card.h"
 
 class Deck {
-
+public:
+    Deck();
+    ~Deck();
+    Deck(const Deck& deckC);
+    Deck& operator=(const Deck& deckCopy);
+    void PopuDeck();
+    void Shuffle();
+    bool AddCard(Card newCard);
 private:
     Card* cards;
     int arraySize;

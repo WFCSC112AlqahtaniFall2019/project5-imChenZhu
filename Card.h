@@ -9,6 +9,14 @@ const string ranks[] = {"Ace","2","3","4","5","6","7","8","9","10","Jack","King"
 const string suits[] = {"Clubs","Diamonds","Hearts","Spades"};
 
 class Card {
+public:
+    Card();
+    Card(int initRank, int initSuit);
+    bool operator> (Card user); //Overloaded Comparison Operator
+    string cardName();
+private:
+    int rank;
+    int suit;
 
 };
 
